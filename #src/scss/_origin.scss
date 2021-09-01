@@ -1,0 +1,24 @@
+*{
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-family: montserrat;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.container-inner{
+    margin: 0 auto;
+    max-width: 1260px;
+   
+
+}
+.inner-head{
+    z-index: 10;
+    position: relative;
+}

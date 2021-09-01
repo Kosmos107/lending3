@@ -1,0 +1,44 @@
+.section-header{
+    padding-top:2% ;
+    background: url(/img/header/back.png);
+     background-position:50% 50%;
+    background-repeat:no-repeat;
+    background-size:cover;
+    min-height: 100vh;
+    
+    position: relative;
+    &__content{
+        margin: 150px auto;
+        text-align: center;
+    }
+}
+.section-header::before{
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    z-index: 5;
+    
+}
+
+.navbar{
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px 0 15px;
+    align-items: center;
+    &__links{
+        display: flex;
+        max-width: 550px;
+        justify-content: space-between;
+        width: 100%;
+        
+    }
+    &__logo{
+      display: inline-block;
+    }
+ }
