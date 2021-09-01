@@ -5,6 +5,10 @@
     box-sizing: border-box;
     color: #ffffff;
     font-family: montserrat;
+   
+}
+body{
+    background-color: #222831;
 }
 li{
     list-style-type: none;
@@ -19,6 +23,28 @@ a{
 
 }
 .inner-head{
-    z-index: 10;
+    z-index: 5;
     position: relative;
+}
+
+
+.btn{
+        
+    
+    background-color:#1F4AA8;
+    border-radius: 40px;
+    text-align: center;
+    padding:14px 40px;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: capitalize;
+     transition: all .3s ease;
+    cursor: pointer;
+}
+.btn:active{
+    transition: all .5s ease;
+    transform: scale(.9);
+    background: crimson;
+    color: darkkhaki;
 }

@@ -1,15 +1,39 @@
 .section-header{
-    padding-top:2% ;
+    padding-top:4%  ;
+    padding-bottom: 5%;
     background: url(/img/header/back.png);
-     background-position:50% 50%;
+     background-position:center top;
     background-repeat:no-repeat;
-    background-size:cover;
-    min-height: 100vh;
+    background-size: cover;
+   position: relative;
     
-    position: relative;
+    // min-height: 85vh; //потом удалить
     &__content{
-        margin: 150px auto;
+        margin: 150px auto ;
         text-align: center;
+        padding: 0 15px;  
+    }
+    &__title{
+        text-align: center;
+        max-width: 770px;
+        font-size: 72px;
+        margin:  0 auto 45px;
+        font-weight: bold;
+        line-height: 88 / 72 * 100%;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        
+    }
+    &__subtitle{
+        letter-spacing: 0.055em;
+        font-size:16px;
+        font-weight: 600;
+    }
+    &__botom{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        background: linear-gradient(180deg, rgba(34, 40, 49, 0) 0%, #222831 100%);
     }
 }
 .section-header::before{
@@ -20,7 +44,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.35);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 5;
     
 }
@@ -33,12 +57,42 @@
     align-items: center;
     &__links{
         display: flex;
-        max-width: 550px;
+        max-width: 500px;
         justify-content: space-between;
         width: 100%;
+        text-transform:capitalize ;
+        li{
+            transition: all .2s ease;
+            font-size: 18px;
+            line-height: 22 / 18 * 100%;
+            transition: all .2s ease;
+            max-width: 50px;
+            width: 100%;
+            display: inline-block;
+            transition: all .2s ease;
+            
+        }
+        li:hover{
+            transition: all .2s ease;
+             transform: scale(1.1);
+            font-weight: bold;
+            
+        }
+        
         
     }
     &__logo{
       display: inline-block;
+    }
+    &__btn{
+        
+        max-width: 160px;
+
+    }
+    &__btn:active{
+        transition: all .5s ease;
+        transform: scale(.9);
+        background: crimson;
+        color: darkkhaki;
     }
  }
