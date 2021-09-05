@@ -2,7 +2,9 @@
     box-shadow: inset 0 2px 5px rgba(154, 147, 140, 0.5);
     
 }
-
+.section-message *{
+    color: black;
+}
 .message-body{
     position: relative;
     max-width: 1260px;
@@ -21,9 +23,86 @@
         
     }
     &__btn{
-        max-width: 220px;
-        margin: 0 auto;
+        
+        display: block;
         padding: 20px 15px ;
+        margin: 0 auto;
+        max-width: 220px;
+        color: white;
+    }
+    &__wrraper-input{
+    
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 360px;
+        height: 50px;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 0 10px 0 0;
+        input{
+           flex: 0 0 80%;
+            border: none;
+            color: black;
+            padding: 5px;
+            background-color: #f8f8ff;
+            outline: none;
+            
+        }
+    }
+    &__logo{
+        flex: 1 0 10%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        
+    }
+    &__arroy{
+         border: 1px solid black;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        margin: 0 10px;
+        background-image: url(/img/logo/btn_array.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    &__data{
+        max-width: 180px;
+        width: 100%;
+        height: 50px;
+        border: 1px solid black;
+        margin: 0 7px;
+        border-radius: 5px;
+    }
+
+}
+
+.data{
+    position: relative;
+    &__logo{
+        display: inline-block;
+        width: 100%;
+        max-width: 20%;
+        padding: 0 30px;
+        height: 100%;
+        background-image: url(/img/logo/calendar.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    &__title{
+        position: absolute;
+        top: 10%;
+        left: 30%;
+        color: black;
+        font-size: 11px;
+    }
+    &__subtitle{
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        max-width: 40px;
+        height: 20px; 
     }
 }
 .navbar-mess{
@@ -79,7 +158,7 @@
         padding-left: 20px;
         input{
             
-            visibility: hidden;
+         visibility: hidden;
         }
         
     }
@@ -107,7 +186,7 @@
         top: 18%;
         left: 5px;
         border-radius: 10px;
-        visibility: hidden;
+         visibility: hidden;
     }
     
     
@@ -149,13 +228,14 @@
        }
        
     }
-       &-item:last-child{
-        margin-right: 0;
-       }
+    //    &-item:last-child{
+    //     margin-right: 20px;
+    //    }
        
 
     
 }  
+
 
 
 
@@ -164,3 +244,18 @@
     justify-content: space-between;
 }
 
+._center{
+    display: flex;
+    
+    align-items: center;
+}
+
+.logo{
+    &-from{
+        background-image: url(/img/logo/fly_from.svg);
+       
+    }
+    &-to{
+        background-image: url(/img/logo/fly_to.svg);
+    }
+}

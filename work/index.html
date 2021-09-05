@@ -75,15 +75,27 @@
                         </div>
                 </div>
                 <div class="message-body__item _center">
-                       <input type="text" class="message-body__input">
-                       <div class="message__arroy"></div>
-                       <input type="text" class="message-body__input">
-                       <div class="message-body__data departing"></div>
-                       <div class="message-body__data returning"></div>
+                       <div class="message-body__wrraper-input">
+                           <div class="message-body__logo logo-from"></div>
+                           <input type="text" class="message-body__input">
+                        </div>
+                       <div class="message-body__arroy"></div>
+                       <div class="message-body__wrraper-input">
+                          <div class="message-body__logo logo-to"></div>
+                           <input type="text" class="message-body__input">
+                        </div>
+                       <label for="data-from" class="message-body__data data ">
+                            <div class="data__logo"></div>
+                            <div class="data__title">departing</div>
+                                <input class="data__subtitle" id="data-from" type="date">
+                       </label>
+                       <label for="data-to" class="message-body__data data ">
+                             <div class="data__logo"></div>
+                             <div class="data__title">returning</div>
+                                <input class="data__subtitle" id="data-to" type="date">
+                        </label>
                 </div>
-                <div class="message-body__item  _bottom">
-                        <div class="message-body__btn btn">Search</div>
-                </div>    
+                <div class="message-body__btn btn">Search</div>    
             </div>
     </menu>
 </body>
