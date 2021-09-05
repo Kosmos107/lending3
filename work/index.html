@@ -42,34 +42,48 @@
     <menu >
         <section class="section-message">
             <div class="section-message__body message-body">
-                <div class="message-body__header"></div>
-                <div class="message-body__content">
-                    <div class="message-body__top">
+                <div class="message-body__navbar navbar-mess">
+                    <ul class="navbar-mess__links">
+                        <li class="navbar-mess__link"><a>stays</a></li>
+                        <li class="navbar-mess__link"><a>flight</a></li>
+                        <li class="navbar-mess__link"><a> cars</a></li>
+                        <li class="navbar-mess__link"><a>packages</a></li>
+                        <li class="navbar-mess__link"><a>things to do</a></li>
+                    </ul>
+                </div>
+                <div class="message-body__item _top">
                         <div class="message-body__chexbox chexbox" >
-                            <label for="" class="chexbox__label">
-                                <input type="text" class="chexbox__input">
+                            <label for="One-way" class="chexbox__label">
+                                <input  type="checkbox" id="One-way" class="chexbox__input">
+                                <div class="chexbox__checked" ></div>
+                                One-way
                             </label>
-                            <label for="" class="chexbox__label">
-                                <input type="text" class="chexbox__input">
+                            <label for="Return" class="chexbox__label">
+                                <input type="checkbox" id="Return" class="chexbox__input">
+                                <div class="chexbox__checked" ></div>
+                                Return
                             </label>
-                            <label for="" class="chexbox__label">
-                                <input type="text" class="chexbox__input">
+                            <label for="Multi-city" class="chexbox__label">
+                                <input type="checkbox" id="Multi-city" class="chexbox__input">
+                                <div class="chexbox__checked" ></div>
+                                Multi-city
                             </label>
                         </div>
-                        <div class="message-body__travel"></div>
-                    </div>
-                   <div class="message-body__center">
+                        <div class="message-body__travel travel">
+                            <div class="travel-item">2 traveller</div>
+                            <div class="travel-item">Economy</div>
+                        </div>
+                </div>
+                <div class="message-body__item _center">
                        <input type="text" class="message-body__input">
                        <div class="message__arroy"></div>
                        <input type="text" class="message-body__input">
                        <div class="message-body__data departing"></div>
                        <div class="message-body__data returning"></div>
-                   </div>
-                   <div class="message-body__bottom">
-                        <div class="message-body__btn btn"></div>
-                   </div>
-                    
                 </div>
+                <div class="message-body__item  _bottom">
+                        <div class="message-body__btn btn">Search</div>
+                </div>    
             </div>
     </menu>
 </body>
