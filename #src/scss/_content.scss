@@ -1,0 +1,78 @@
+.section-content{
+    padding: 40px 15px;
+    &__text{
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
+}
+.block-content{
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+    height: 600px;
+    grid-gap:35px;
+    grid-template-areas:
+    "m m c u" 
+    "h k c u "
+    ;
+    &__item{
+        position: relative;
+        background-color: royalblue;
+        border-radius: 20px;
+        background-position: center center;
+        background-size: cover;
+        transition: all 1s ease;
+        transform:scale(1)
+        
+    }
+    &__item:hover{
+        transition: all 1s ease;
+        transform: translateZ(0) scale(1.1);
+        
+        
+
+    }
+    &__item:hover *{
+        color:#40a6fa;
+        transition: color 1.5s ease;
+    }
+    &__text{
+        position: absolute;
+        bottom: 10%;
+        left:10%;
+    }
+    &__title{
+        font-family: Poppins;
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    &__subtitle{
+        font-family: Poppins;
+        line-height: 24px;
+        font-size: 16px;
+        max-width: 140px;
+    }
+}
+.m{
+    grid-area: m;
+    background-image: url(/img/content/m.png);
+}
+.h{
+    grid-area: h;
+    background-image: url(/img/content/h.png);
+}
+.k{
+    grid-area: k;
+    background-image: url(/img/content/k.png);
+}
+.c{
+    grid-area: c;
+    background-image: url(/img/content/c.png);
+}
+.u{
+    grid-area: u;
+    background-image: url(/img/content/u.png);
+}

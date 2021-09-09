@@ -1,0 +1,40 @@
+.section-dowland{
+    padding: 100px 15px;
+    &__container{
+        max-width: 600px;
+        margin: 0 auto;
+        
+        height: 200px;
+    }
+    &__text{
+        margin: 0 auto 20px;
+        width: 235px;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+        
+    }
+    &__block{
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        max-width: 570px;
+    }
+    &__btn{
+         width: 100%;
+        max-width: 280px;
+        height: 90px;
+        background-color: bisque;
+        cursor: pointer;
+       
+    }
+}
+.google{
+    background: url(/img/logo/google.png) 50% 50% no-repeat;
+    
+}
+.app{
+    background: url(/img/logo/app.png) 50% 50% no-repeat;
+   
+}
