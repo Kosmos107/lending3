@@ -6,8 +6,6 @@
     background-repeat:no-repeat;
     background-size: cover;
    position: relative;
-    
-    // min-height: 85vh; //потом удалить
     &__content{
         margin: 150px auto ;
         text-align: center;
@@ -56,12 +54,32 @@
     justify-content: space-between;
     padding: 0 15px 0 15px;
     align-items: center;
+    position: relative;
+    
     &__links{
         display: flex;
         max-width: 500px;
         justify-content: space-between;
         width: 100%;
         text-transform:capitalize ;
+        @media (max-width:$lg+px) {
+            position: absolute;
+            max-width: 100px;
+            flex-direction: column;
+            top:0;
+            left: 40%;
+            transition: all .5s ease;
+            transform-origin:top;
+            transform: scaleY(0) ;
+            
+            li{
+                
+                border: blanchedalmond 1px solid;
+                max-width: 100%;
+                padding: 10px 10px;
+                background-color:#1F4AA8;
+            }
+        }
         li{
             
             transition: all .2s ease;
@@ -69,7 +87,6 @@
             line-height: 22 / 18 * 100%;
             transition: all .2s ease;
             max-width: 50px;
-            
             display: inline-block;
             transition: all .2s ease;
             
@@ -98,3 +115,9 @@
         color: darkkhaki;
     }
  }
+ @media (max-width:$lg+px) {
+    ._active-links{
+        transform: scaleY(1) ;
+    }
+ }
+ 
