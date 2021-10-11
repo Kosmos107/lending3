@@ -50,11 +50,9 @@ a{
 }
 .burger{
     display: none;
-    top: 10%;
-    left:60%;
     width: 35px;
     height: 35px;
-    position: absolute;
+    position: relative;
     @media (max-width:$lg+px) {
         display: block;
     }
@@ -92,12 +90,17 @@ a{
     }
     span::after{
         transform:  translateY(-233%) rotate(-50deg);
-        background: linear-gradient(.32turn ,#1F4AA8,#9198e1);
-        box-shadow: 2px 2px 20px white ;
+        background: linear-gradient(0.16turn ,#1F4AA9,#b5bbfc);
+        box-shadow: 2px 2px 30px white ;
     }
     span::before{
         transform:  translateY(233%) rotate(50deg);
-        box-shadow: 2px 2px 20px rgb(231, 223, 223) ;
-        background: linear-gradient(.22turn ,#1F4AA8,#9198e9);
+        box-shadow: 2px 2px 30px rgb(231, 223, 223) ;
+        background: linear-gradient(0.34turn,#1F4AA9,#b5bbfc);
+    }
+}
+.text-title{
+    @media (max-width:$ssm+px) {
+        overflow: hidden;
     }
 }

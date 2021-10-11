@@ -6,6 +6,9 @@
     background-repeat:no-repeat;
     background-size: cover;
    position: relative;
+    &__burger{
+    min-width: 40px;
+    }
     &__content{
         margin: 150px auto ;
         text-align: center;
@@ -19,6 +22,10 @@
         font-weight: bold;
         line-height: 88 / 72 * 100%;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        @media (max-width:$sm+px) {
+            font-size: 50px;
+            overflow: hidden;
+        }
         
     }
     &__subtitle{
@@ -52,10 +59,15 @@
     
     display: flex;
     justify-content: space-between;
-    padding: 0 15px 0 15px;
+    padding: 0 15px;
     align-items: center;
     position: relative;
-    
+    @media (max-width:$ssm+px) {
+        flex-wrap: wrap;
+        &__btn{
+            margin-top: 20px;
+        }
+    }
     &__links{
         display: flex;
         max-width: 500px;
@@ -67,10 +79,11 @@
             max-width: 100px;
             flex-direction: column;
             top:0;
-            left: 40%;
+            left: 10%;
             transition: all .5s ease;
             transform-origin:top;
-            transform: scaleY(0) ;
+            transform:perspective(600px) rotateX(45deg) translateY(-200px) scaleY(0);
+            
             
             li{
                 
@@ -104,9 +117,7 @@
       display: inline-block;
     }
     &__btn{
-        
         max-width: 160px;
-
     }
     &__btn:active{
         transition: all .5s ease;
@@ -117,7 +128,8 @@
  }
  @media (max-width:$lg+px) {
     ._active-links{
-        transform: scaleY(1) ;
+        transform:perspective(600px) rotateX(0) translateX(0) scaleY(1);
+        
     }
  }
  

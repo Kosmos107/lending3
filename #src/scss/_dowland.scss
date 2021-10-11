@@ -1,14 +1,14 @@
 .section-dowland{
-    padding: 100px 15px;
+    padding: 50px 15px;
+    border-bottom:1px solid #133b5c;;
     &__container{
-        max-width: 600px;
+        max-width: 580px;
         margin: 0 auto;
-        
-        height: 200px;
+        min-height: 200px;
     }
     &__text{
         margin: 0 auto 20px;
-        width: 235px;
+        max-width: 235px;
         font-weight: 600;
         font-size: 32px;
         line-height: 40px;
@@ -19,22 +19,27 @@
         display: flex;
         margin: 0 auto;
         justify-content: space-between;
-        max-width: 570px;
+        max-width: 600px;
+        @media (max-width:$md+px) {
+            flex-direction: column;
+        }
     }
     &__btn{
-         width: 100%;
-        max-width: 280px;
-        height: 90px;
-        background-color: bisque;
+        width: 100%;
+        max-width: 270px;
         cursor: pointer;
-       
+        img{
+            display: block;
+            max-width: 100%;
+            height: 90px;
+            @media (max-width:$ssm+px) {
+                
+                
+            }
+        }
+        @media (max-width:$md+px) {
+            margin:0 auto 20px;
+            
+        }
     }
-}
-.google{
-    background: url(/img/logo/google.png) 50% 50% no-repeat;
-    
-}
-.app{
-    background: url(/img/logo/app.png) 50% 50% no-repeat;
-   
 }

@@ -14,6 +14,7 @@
     margin: -100px auto 0 auto;
     padding: 25px 40px;
     z-index: 150;
+   
     &__item{
         margin-bottom: 20px;
         
@@ -31,7 +32,6 @@
         color: white;
     }
     &__wrraper-input{
-    
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -40,6 +40,15 @@
         border: 1px solid black;
         border-radius: 5px;
         padding: 0 10px 0 0;
+        @media (max-width:$sm+px) {
+            
+            max-width: 100%;
+            overflow: hidden;
+            input{
+                max-width: 100%;
+                flex: 0 0 80%;
+            }
+        }
         input{
            flex: 0 0 80%;
             border: none;
@@ -49,12 +58,18 @@
             outline: none;
             
         }
+        
     }
     &__logo{
-        flex: 1 0 10%;
+        max-width: 20%;
+        flex: 1 0 15%;
         height: 100%;
         background-repeat: no-repeat;
         background-position: center center;
+        @media (max-width:$sm+px) {
+                padding: 0 10px;
+                flex: 1 0 45%;
+            }
         
     }
     &__arroy{
@@ -109,11 +124,27 @@
     border-bottom:1px solid #888AA2 ;
     padding-bottom: 20px;
     margin-bottom: 30px;
+    @media (max-width:$sm+px) {
+        &__links{
+            flex-direction: column;
+            margin: 0 auto;
+            
+        }
+        &__link{
+            margin-bottom: 20px;
+            text-align: center;
+
+        }
+        &__link::before{
+            left: 0;
+            bottom: -10px;
+        }
+    }
     &__links{
         display: flex;
         max-width: 430px;
         justify-content: space-between;
-        
+       
         
         
     }
@@ -142,7 +173,7 @@
         position: absolute;
         width: 100%;
         height: 3px;
-         background: #1F4AA8;
+        background: #1F4AA8;
         bottom: -22px;
         transition: all 0.4s ease;
        
@@ -159,7 +190,15 @@
 }
 
 .chexbox{
-    
+    @media (max-width:$md+px) {
+        &__label{
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+    }
+    @media (max-width:$sm+px) {
+        max-width: 120px;
+    }
     &__label{
         
         max-width: 120px;
@@ -209,10 +248,23 @@
 .travel{
     display: flex;
     max-width: 330px;
-    
     justify-content: space-between;
-    
+    flex-wrap: wrap;
+    @media (max-width:$sm+px) {
+        overflow: hidden;
+        flex-direction: column;
+        
+        &-item{
+            min-width:100%;
+            margin-bottom: 10px;
+            margin-right:0 ;
+        }
+        &-item::before{
+            right: 10px;
+        }
+    }
     &-item{
+        
         position: relative;
         color: #1F4AA8;
         font-family: Montserrat;
@@ -255,12 +307,19 @@
 ._top{
     display: flex;
     justify-content: space-between;
+   
 }
 
 ._center{
     display: flex;
-    
     align-items: center;
+    @media (max-width:$lg+px) {
+        flex-direction: column;
+        *{
+            margin-bottom: 10px;
+        }
+    }
+
 }
 
 .logo{

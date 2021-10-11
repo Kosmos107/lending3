@@ -17,6 +17,21 @@
     "m m c u" 
     "h k c u "
     ;
+    @media (max-width:$sm+px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,1fr);
+        grid-template-areas:
+        "m" 
+        "c"
+        "h"
+        "k"
+        "u"
+        ;
+        &__item{
+            overflow: hidden;
+        }
+        
+    }
     &__item{
         position: relative;
         background-color: royalblue;
@@ -24,7 +39,8 @@
         background-position: center center;
         background-size: cover;
         transition: all 1s ease;
-        transform:scale(1)
+        transform:scale(1);
+        
         
     }
     &__item:hover{
